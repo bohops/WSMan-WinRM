@@ -2,7 +2,7 @@
 A collection of proof-of-concept source code and scripts for executing remote commands over WinRM using the WSMan.Automation COM object. 
 
 ## Background
-For background information, please refer to the following blog post []()
+For background information, please refer to the following blog post: [WS-Management COM: Another Approach for WinRM Lateral Movement](https://bohops.com/2020/05/12/ws-management-com-another-approach-for-winrm-lateral-movement/)
 
 ## Notes
 - SharpWSManWinRM.cs and CppWsManWinRM.cpp compile in Visual Studio 2019.  Refer to the code comments for required imports/references/etc.
