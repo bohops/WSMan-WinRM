@@ -1,9 +1,12 @@
 # WSMan-WinRM
-A collection of proof-of-concept source code and scripts for executing remote commands over WinRM
+A collection of proof-of-concept source code and scripts for executing remote commands over WinRM using the WSMan.Automation COM object. 
 
+## Background
 For background information, please refer to the following blog post []()
 
-SharpWSManWinRM.cs and CppWsManWinRM.cpp compile in Visual Studio 2019.  Refer to the code comments for required imports/references/etc.
+## Notes
+- SharpWSManWinRM.cs and CppWsManWinRM.cpp compile in Visual Studio 2019.  Refer to the code comments for required imports/references/etc.
+- All examples leverage the WMI Win32_Process class and WMI Create method for invocation. 
 
 ## Usage
 
@@ -21,9 +24,9 @@ SharpWSManWinRM.cs and CppWsManWinRM.cpp compile in Visual Studio 2019.  Refer t
  Usage: Invoke-WSManWinRM -hostname <hostname> -command <command> -user <domain\user> -password <password>
 
  Example: import-module .\WSManWinRM.ps1
-		      Invoke-WSManWinRM -hostname MyServer.domain.local -command calc.exe
+          Invoke-WSManWinRM -hostname MyServer.domain.local -command calc.exe
  Example: import-module .\WSManWinRM.ps1
-		      Invoke-WSManWinRM -hostname MyServer.domain.local -command calc.exe -user domain\joe.user -password P@ssw0rd
+          Invoke-WSManWinRM -hostname MyServer.domain.local -command calc.exe -user domain\joe.user -password P@ssw0rd
 ```		  
 		  
 ### WSManWinRM.vbs
